@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.1
-  snyk: syk/snyk@0.0.13
+  snyk: snyk/snyk@0.0.13
 
 jobs:
   unit-test:
