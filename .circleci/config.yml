@@ -100,3 +100,9 @@ workflows:
             - unit-test
             - npm-audit
             - security-check
+      - deploy-staging:
+          requires:
+            - build
+      - deploy-live:
+          requires:
+            - deploy-staging
