@@ -1,6 +1,6 @@
 # Beyond Srebrenica
 [![GitHub license](https://img.shields.io/github/license/Anngei/beyond_srebrenica)](https://github.com/Anngei/beyond_srebrenica)
-![CircleCI](https://img.shields.io/circleci/build/github/Anngei/beyond_srebrenica)
+[![CircleCI](https://img.shields.io/circleci/build/github/Anngei/beyond_srebrenica)](https://app.circleci.com/pipelines/github/Anngei/beyond_srebrenica)
 
 ## Available Scripts
 
