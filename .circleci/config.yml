@@ -12,7 +12,12 @@ jobs:
       - node/install-packages
       - run:
           name: Run tests
-          command: npm test
+          command: |
+            JEST_JUNIT_OUTPUT_DIR=~/reports/junit/ npm run test:report
+      - store_test_results:
+          path: ~/reports/junit/
+      - store_artifacts:
+          path: ~/reports/junit
 
   npm-audit:
     docker:
