@@ -10,6 +10,22 @@ A _[react](https://reactjs.org/)_ based javascript single page application built
 npm install
 ```
 
+### Code formatting
+```bash
+npm run format
+```
+Will run [prettier](https://prettier.io/) to format all files
+
+```bash
+npm run lint
+```
+Will run [eslint](https://eslint.org/) to check the code for lint
+
+```bash
+npm run lint:fix
+```
+Will run [eslint](https://eslint.org/) and try to fix as much lint as possible automatically
+
 ### Start local development server
 ```bash
 npm start
