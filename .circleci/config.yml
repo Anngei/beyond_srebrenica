@@ -2,7 +2,6 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.1
-  snyk: snyk/snyk@0.0.13
 
 jobs:
   unit-test:
@@ -15,7 +14,7 @@ jobs:
           name: Run tests
           command: npm test
 
-  security-check:
+  npm-audit:
     docker:
       - image: cimg/node:15.1
     steps:
@@ -24,10 +23,22 @@ jobs:
       - run:
           name: Run audit
           command: npm audit
-      - snyk/scan
+
+  security-check:
+    docker:
+      - image: aquasec/trivy
+    steps:
+      - checkout
+      - run:
+          name: Debug
+          command: ls -all
+      - run:
+          name: Run security check
+          command: trivy fs ./
 
 workflows:
   test-deploy:
     jobs:
       - unit-test
+      - npm-audit
       - security-check
