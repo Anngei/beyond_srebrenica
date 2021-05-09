@@ -50,11 +50,8 @@ jobs:
       - run:
           name: Move docker related files
           command: mv build docker/
-      - run:
-          name: debug
-          command: ls -all
       - persist_to_workspace:
-          root: ~/
+          root: ~/project/
           paths:
             - docker
 
@@ -62,13 +59,13 @@ jobs:
     machine: true
     steps:
       - attach_workspace:
-          at: ~/
+          at: ~/project
       - run:
           name: Build and push Docker image to Heroku
           command: |
             sudo curl https://cli-assets.heroku.com/install.sh | sh
             heroku container:login
-            cd ~/docker
+            cd docker
             heroku container:push -a beyond-srebrenica-staging web
             heroku container:release -a beyond-srebrenica-staging web
             curl https://beyond-srebrenica-staging.herokuapp.com
@@ -77,13 +74,13 @@ jobs:
     machine: true
     steps:
       - attach_workspace:
-          at: ~/
+          at: ~/project
       - run:
           name: Build and push Docker image to Heroku
           command: |
             sudo curl https://cli-assets.heroku.com/install.sh | sh
             heroku container:login
-            cd ~/docker
+            cd docker
             heroku container:push -a beyond-srebrenica web
             heroku container:release -a beyond-srebrenica web
             curl https://beyond-srebrenica.herokuapp.com
