@@ -1,8 +1,9 @@
-import { ReportHandler } from "web-vitals";
+import { ReportHandler } from 'web-vitals';
+import { logger } from './logger';
 
 export function reportWebVitals(onPerfEntry: boolean | ReportHandler): void {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import("web-vitals")
+    import('web-vitals')
       .then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
         getCLS(onPerfEntry);
         getFID(onPerfEntry);
@@ -11,6 +12,6 @@ export function reportWebVitals(onPerfEntry: boolean | ReportHandler): void {
         getTTFB(onPerfEntry);
         return null;
       })
-      .catch((error) => console.error(error));
+      .catch((error) => logger.error(error));
   }
 }
