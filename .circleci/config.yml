@@ -42,7 +42,6 @@ jobs:
           command: trivy fs ./
 
   build:
-    working_directory: ~/repo
     docker:
       - image: cimg/node:15.1
     steps:
