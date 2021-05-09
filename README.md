@@ -1,6 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Beyond Srebrenica
+[![GitHub license](https://img.shields.io/github/license/Anngei/beyond_srebrenica)](https://github.com/Anngei/beyond_srebrenica)
+![CircleCI](https://img.shields.io/circleci/build/github/Anngei/beyond_srebrenica)
 
 ## Available Scripts
 
