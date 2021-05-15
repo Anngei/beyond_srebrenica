@@ -10,8 +10,8 @@ import { Navigation } from './components/Navigation/Navigation';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navigation />
     <Router>
+      <Navigation />
       <Switch>
         <Route path="/detail">
           <Detail />
