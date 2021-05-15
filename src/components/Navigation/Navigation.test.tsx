@@ -3,7 +3,7 @@ import React from 'react';
 import { Navigation } from './Navigation';
 
 describe('Navigation component', () => {
-  it('should render', () => {
+  it('should render title', () => {
     render(<Navigation />);
     const text = screen.getByText(/srebrenica/i);
 
