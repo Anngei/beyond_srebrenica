@@ -4,12 +4,18 @@ import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { reportWebVitals } from './reportWebVitals';
 import { logger } from './logger';
-import { Home } from './components/Home';
+import { Home } from './components/Home/Home';
+import { Detail } from './components/Detail/Detail';
+import { Navigation } from './components/Navigation/Navigation';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Navigation />
     <Router>
       <Switch>
+        <Route path="/detail">
+          <Detail />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
