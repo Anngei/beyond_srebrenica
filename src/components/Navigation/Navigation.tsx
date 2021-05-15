@@ -9,9 +9,7 @@ export function Navigation(_props: any): JSX.Element {
         Beyond Srebrenica
       </Link>
       <section className={styles.links}>
-        <Link to="/about-us">
-          Über uns
-        </Link>
+        <Link to="/about-us">Über uns</Link>
       </section>
     </nav>
   );
