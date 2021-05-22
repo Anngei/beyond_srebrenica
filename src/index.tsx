@@ -21,7 +21,13 @@ ReactDOM.render(
         </Route>
         <Route path="/background">
           <MaxWidthWrapper>
-            <Accordion />
+            <h2>Hintergrund</h2>
+            <Accordion
+              elements={{
+                genocide: 'Begriff Völkermord',
+                lawsuit: 'Gerichtsverfahren',
+              }}
+            />
           </MaxWidthWrapper>
         </Route>
       </Switch>

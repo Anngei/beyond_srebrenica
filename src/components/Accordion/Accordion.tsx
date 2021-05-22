@@ -1,34 +1,100 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Accordion.module.css';
 import { Content } from '../Content/Content';
 
-function Term({
-  title,
-  contentKey,
-}: {
-  title: string;
-  contentKey: string;
-}): JSX.Element {
+function contentStyle(isShown: boolean): any {
+  if (isShown) {
+    return styles.content;
+  }
+  return styles.contentHidden;
+}
+
+function contentTestId(isShown: boolean): string {
+  if (isShown) {
+    return 'content';
+  }
+  return 'hidden-content';
+}
+
+function renderTitle(contentIsShown: boolean, title: string): JSX.Element {
+  if (contentIsShown) {
+    return (
+      <>
+        <div>{title}</div>{' '}
+        <div>
+          <i className="fas fa-chevron-up" />
+        </div>
+      </>
+    );
+  }
   return (
-    <div className={styles.term}>
-      <div className={styles.title}>{title}</div>
-      <div className={styles.contentHidden}>
+    <>
+      <div>{title}</div>{' '}
+      <div>
+        <i className="fas fa-chevron-down" />
+      </div>
+    </>
+  );
+}
+
+function renderTerm(
+  contentState: Record<string, boolean>,
+  toggleStateFn: (key: string) => any
+): ([contentKey, title]: [string, string]) => JSX.Element {
+  return ([contentKey, title]: [string, string]) => (
+    <div className={styles.term} key={contentKey}>
+      <div
+        aria-hidden="true"
+        onClick={() => toggleStateFn(contentKey)}
+        className={styles.title}
+      >
+        {renderTitle(contentState[contentKey], title)}
+      </div>
+      <div
+        className={contentStyle(contentState[contentKey])}
+        data-testid={contentTestId(contentState[contentKey])}
+      >
         <Content contentKey={contentKey} />
       </div>
     </div>
   );
 }
 
-export function Accordion(_props: any): JSX.Element {
-  // const contentState = {
-  //   genocide: styles.contentHidden,
-  //   lawsuit: styles.contentHidden,
-  // };
+export function initialToggleState(
+  elements: Record<string, string>
+): Record<string, boolean> {
+  const elementEntriesWithFalse = Object.entries(elements).map(
+    ([key, _value]) => [key, false]
+  );
+  return Object.fromEntries(elementEntriesWithFalse);
+}
+
+function toggleContentState(
+  contentState: Record<string, boolean>,
+  setContentState: any
+): (key: string) => any {
+  return (key: string) => {
+    setContentState({ ...contentState, [key]: !contentState[key] });
+  };
+}
+
+export function Accordion({
+  elements,
+}: {
+  elements: Record<string, string>;
+}): JSX.Element {
+  const [contentState, setContentState] = useState<Record<string, boolean>>(
+    initialToggleState(elements)
+  );
 
   return (
     <section className={styles.accordion}>
-      <Term title="Begriff Völkermord" contentKey="genocide" />
-      <Term title="Gerichtsverfahren" contentKey="lawsuit" />
+      {Object.entries(elements).map(
+        renderTerm(
+          contentState,
+          toggleContentState(contentState, setContentState)
+        )
+      )}
     </section>
   );
 }

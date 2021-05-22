@@ -1,8 +1,19 @@
+@value sizes: "../../sizes.css";
+@value font-size-bigger, spacer from sizes;
+@value colors: "../../colors.css";
+@value custom-gray from colors;
+
 .accordion {
   width: 100%;
+  border-bottom: 1px solid custom-gray;
 }
 
 .title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contentHidden {
@@ -10,7 +21,9 @@
 }
 
 .content {
+  padding: 1rem;
 }
 
 .term {
+  border-top: 1px solid custom-gray;
 }
