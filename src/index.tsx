@@ -7,6 +7,7 @@ import { logger } from './logger';
 import { Home } from './components/Home/Home';
 import { Detail } from './components/Detail/Detail';
 import { Navigation } from './components/Navigation/Navigation';
+import { BaseContent } from './components/BaseContent/BaseContent';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/detail">
           <Detail />
+        </Route>
+        <Route path="/about-us">
+          <BaseContent content="about-us" />
         </Route>
         <Route path="/">
           <Home />
