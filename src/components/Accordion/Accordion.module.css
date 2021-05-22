@@ -1,7 +1,7 @@
 @value sizes: "../../sizes.css";
 @value font-size-bigger, spacer from sizes;
 @value colors: "../../colors.css";
-@value custom-gray from colors;
+@value custom-gray, custom-gray-dark from colors;
 
 .accordion {
   width: 100%;
@@ -14,6 +14,10 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+.title:hover {
+  color: custom-gray-dark;
 }
 
 .contentHidden {

@@ -1,10 +1,10 @@
 @value sizes: "../../sizes.css";
 @value full-width, spacer from sizes;
 @value colors: "../../colors.css";
-@value primary, custom-white from colors;
+@value primary-dark, custom-white, custom-gray from colors;
 
 .navigation {
-  background-color: primary;
+  background-color: primary-dark;
   color: custom-white;
   height: 4.8rem;
 }
@@ -20,6 +20,10 @@
 .navigation a {
   color: custom-white;
   margin-right: spacer;
+}
+
+.navigation a:hover {
+  color: custom-gray;
 }
 
 .logo {
