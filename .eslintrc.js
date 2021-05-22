@@ -18,8 +18,6 @@ module.exports = {
         "plugin:jest/recommended",
         "plugin:promise/recommended",
         "prettier",
-        "prettier/react",
-        "prettier/@typescript-eslint",
     ],
     env: {
         node: true,
