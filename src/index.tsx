@@ -18,7 +18,7 @@ ReactDOM.render(
           <Detail />
         </Route>
         <Route path="/about-us">
-          <Content content="about-us" />
+          <Content contentKey="about-us" />
         </Route>
         <Route path="/">
           <Home />
