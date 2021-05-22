@@ -1,20 +1,25 @@
+@value sizes: "../../sizes.css";
+@value full-width, spacer from sizes;
+@value colors: "../../colors.css";
+@value primary, custom-white from colors;
+
 .navigation {
-  background-color: #93c487;
-  color: #ffffff;
+  background-color: primary;
+  color: custom-white;
   height: 4.8rem;
 }
 
 .ghostShark {
   width: 100%;
-  max-width: 1200px;
+  max-width: full-width;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .navigation a {
-  color: #fff;
-  margin-right: 20px;
+  color: custom-white;
+  margin-right: spacer;
 }
 
 .logo {

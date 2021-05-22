@@ -1,0 +1,8 @@
+@value sizes: "../../sizes.css";
+@value full-width from sizes;
+
+.maxWidth {
+  margin: auto;
+  width: 100%;
+  max-width: full-width;
+}

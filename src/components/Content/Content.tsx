@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { logger } from '../../logger';
 import { getContent } from './client';
-import styles from './Content.module.css';
 
 export function Content({ contentKey }: { contentKey: string }): JSX.Element {
   const [html, setHtml] = useState('');
@@ -15,8 +14,7 @@ export function Content({ contentKey }: { contentKey: string }): JSX.Element {
   }, [contentKey]);
 
   return (
-    <div
-      className={styles.content}
+    <section
       /* eslint-disable-next-line react/no-danger */
       dangerouslySetInnerHTML={{ __html: html }}
     />
