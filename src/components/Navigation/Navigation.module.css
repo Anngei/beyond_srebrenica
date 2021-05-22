@@ -18,7 +18,7 @@
 }
 
 .logo {
-  padding: 1.3rem 1.5rem;
+  padding: 1.3rem 1.5rem 1.3rem 0;
   text-decoration: none;
   display: inline-block;
   outline: none;
@@ -26,6 +26,6 @@
 }
 
 .links {
-  padding: 1.3rem 1.5rem;
+  padding: 1.3rem 0 1.3rem 1.5rem;
   outline: none;
 }
