@@ -8,12 +8,19 @@ import { Navigation } from './components/Navigation/Navigation';
 import { Content } from './components/Content/Content';
 import { Accordion } from './components/Accordion/Accordion';
 import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
+import { Map } from './components/Map/Map';
+import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navigation />
       <Switch>
+        <Route path="/map">
+          <FullWidthWrapper>
+            <Map />
+          </FullWidthWrapper>
+        </Route>
         <Route path="/about-us">
           <MaxWidthWrapper>
             <Content contentKey="about-us" />
@@ -29,6 +36,11 @@ ReactDOM.render(
               }}
             />
           </MaxWidthWrapper>
+        </Route>
+        <Route path="/">
+          <FullWidthWrapper>
+            <Map />
+          </FullWidthWrapper>
         </Route>
       </Switch>
     </Router>

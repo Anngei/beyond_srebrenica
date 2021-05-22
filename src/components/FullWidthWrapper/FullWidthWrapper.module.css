@@ -1,0 +1,8 @@
+@value sizes: "../../sizes.css";
+@value full-width from sizes;
+
+.fullWidth {
+  margin: auto;
+  width: 100vw;
+  height: calc(100vh - 48px);
+}
