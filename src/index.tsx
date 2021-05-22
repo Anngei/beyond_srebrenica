@@ -20,6 +20,12 @@ ReactDOM.render(
         <Route path="/about-us">
           <Content contentKey="about-us" />
         </Route>
+        <Route path="/background">
+          <div>
+            <Content contentKey="genocide" />
+            <Content contentKey="lawsuit" />
+          </div>
+        </Route>
         <Route path="/">
           <Home />
         </Route>
