@@ -42,6 +42,11 @@ ReactDOM.render(
             <Content contentKey="imprint" />
           </MaxWidthWrapper>
         </Route>
+        <Route path="/poi/ikb-berlin">
+          <MaxWidthWrapper>
+            <Content contentKey="poi/ikb-berlin/description" />
+          </MaxWidthWrapper>
+        </Route>
         <Route path="/">
           <FullWidthWrapper>
             <Map />
