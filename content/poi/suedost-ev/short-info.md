@@ -1,6 +1,6 @@
-**Islamisches Kulturzentrum der Bosniaken in Berlin e.V.**
+**Südost Europa Kultur e.V.**
 
-Adalbertstraße 94
-<br />10999 Berlin
+Großbeerenstraße 88
+<br />10963 Berlin
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
