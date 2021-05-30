@@ -6,6 +6,7 @@ import {
   Switch,
   Redirect,
   useLocation,
+  useParams,
 } from 'react-router-dom';
 import { reportWebVitals } from './reportWebVitals';
 import { logger } from './logger';
@@ -55,11 +56,14 @@ const textsPage: (_props: any) => JSX.Element = (_props: any) => (
   </MaxWidthWrapper>
 );
 
-const poiPage: (_props: any) => JSX.Element = (_props: any) => (
-  <MaxWidthWrapper>
-    <Content contentKey="poi/ikb-berlin/description" />
-  </MaxWidthWrapper>
-);
+const PoiPage: (_props: any) => JSX.Element = (_props: any) => {
+  const { poiId } = useParams<{ poiId: string }>();
+  return (
+    <MaxWidthWrapper>
+      <Content contentKey={`poi/${poiId}/description`} />
+    </MaxWidthWrapper>
+  );
+};
 
 const NoMatchPage: (_props: any) => JSX.Element = (_props: any) => {
   const location = useLocation();
@@ -81,7 +85,9 @@ ReactDOM.render(
           <Redirect to={{ pathname: '/map' }} />
         </Route>
         <Route path="/map">{mapPage}</Route>
-        <Route path="/poi/:poiId">{poiPage}</Route>
+        <Route path="/poi/:poiId">
+          <PoiPage />
+        </Route>
         <Route path="/background">{backgroundPage}</Route>
         <Route path="/texts">{textsPage}</Route>
         <Route path="/about-us">{aboutUsPage}</Route>
