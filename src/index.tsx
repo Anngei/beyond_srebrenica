@@ -10,6 +10,7 @@ import { Accordion } from './components/Accordion/Accordion';
 import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
 import { Map } from './components/Map/Map';
 import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper';
+import { List } from "./components/List";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -45,6 +46,12 @@ ReactDOM.render(
         <Route path="/poi/ikb-berlin">
           <MaxWidthWrapper>
             <Content contentKey="poi/ikb-berlin/description" />
+          </MaxWidthWrapper>
+        </Route>
+        <Route path="/texts">
+          <MaxWidthWrapper>
+            <h1>Interviews</h1>
+            <List />
           </MaxWidthWrapper>
         </Route>
         <Route path="/">
