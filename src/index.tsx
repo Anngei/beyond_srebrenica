@@ -10,7 +10,7 @@ import { Accordion } from './components/Accordion/Accordion';
 import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
 import { Map } from './components/Map/Map';
 import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper';
-import { List } from "./components/List";
+import { List } from './components/List';
 
 ReactDOM.render(
   <React.StrictMode>

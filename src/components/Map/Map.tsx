@@ -2,7 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import { LatLngExpression } from 'leaflet';
 import style from './Map.module.css';
-import { Poi } from "./Poi";
+import { Poi } from './Poi';
 
 export function Map(_props: any): JSX.Element {
   const berlinCenter: LatLngExpression = [52.5207797, 13.4056501];
