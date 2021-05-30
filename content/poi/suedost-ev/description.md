@@ -1,4 +1,4 @@
-[&#5176; Zurück](map)
+[&#5176; Zurück](/map)
 # Südost Europa Kultur e.V.
 
 Großbeerenstraße 88

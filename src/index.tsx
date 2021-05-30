@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
   Redirect,
+  useLocation,
 } from 'react-router-dom';
 import { reportWebVitals } from './reportWebVitals';
 import { logger } from './logger';
@@ -17,50 +18,76 @@ import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper
 import { List } from './components/List';
 import './index.css';
 
+const mapPage: (_props: any) => JSX.Element = (_props: any) => (
+  <FullWidthWrapper>
+    <Map poi={['ikb-berlin', 'suedost-ev']} />
+  </FullWidthWrapper>
+);
+
+const aboutUsPage: (_props: any) => JSX.Element = (_props: any) => (
+  <MaxWidthWrapper>
+    <Content contentKey="about-us" />
+  </MaxWidthWrapper>
+);
+
+const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
+  <MaxWidthWrapper>
+    <h1>Hintergrund</h1>
+    <Accordion
+      elements={{
+        genocide: 'Begriff Völkermord',
+        lawsuit: 'Gerichtsverfahren',
+      }}
+    />
+  </MaxWidthWrapper>
+);
+
+const imprintPage: (_props: any) => JSX.Element = (_props: any) => (
+  <MaxWidthWrapper>
+    <Content contentKey="imprint" />
+  </MaxWidthWrapper>
+);
+
+const textsPage: (_props: any) => JSX.Element = (_props: any) => (
+  <MaxWidthWrapper>
+    <h1>Interviews</h1>
+    <List />
+  </MaxWidthWrapper>
+);
+
+const poiPage: (_props: any) => JSX.Element = (_props: any) => (
+  <MaxWidthWrapper>
+    <Content contentKey="poi/ikb-berlin/description" />
+  </MaxWidthWrapper>
+);
+
+const NoMatchPage: (_props: any) => JSX.Element = (_props: any) => {
+  const location = useLocation();
+
+  return (
+    <MaxWidthWrapper>
+      <h1>😓 404 - Seite nicht gefunden</h1>
+      Leider wurde diese Seite ({location.pathname}) nicht gefunden.
+    </MaxWidthWrapper>
+  );
+};
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navigation />
       <Switch>
-        <Route path="/map">
-          <FullWidthWrapper>
-            <Map poi={['ikb-berlin', 'suedost-ev']} />
-          </FullWidthWrapper>
-        </Route>
-        <Route path="/about-us">
-          <MaxWidthWrapper>
-            <Content contentKey="about-us" />
-          </MaxWidthWrapper>
-        </Route>
-        <Route path="/background">
-          <MaxWidthWrapper>
-            <h2>Hintergrund</h2>
-            <Accordion
-              elements={{
-                genocide: 'Begriff Völkermord',
-                lawsuit: 'Gerichtsverfahren',
-              }}
-            />
-          </MaxWidthWrapper>
-        </Route>
-        <Route path="/imprint">
-          <MaxWidthWrapper>
-            <Content contentKey="imprint" />
-          </MaxWidthWrapper>
-        </Route>
-        <Route path="/poi/ikb-berlin">
-          <MaxWidthWrapper>
-            <Content contentKey="poi/ikb-berlin/description" />
-          </MaxWidthWrapper>
-        </Route>
-        <Route path="/texts">
-          <MaxWidthWrapper>
-            <h1>Interviews</h1>
-            <List />
-          </MaxWidthWrapper>
-        </Route>
         <Route exact path="/">
           <Redirect to={{ pathname: '/map' }} />
+        </Route>
+        <Route path="/map">{mapPage}</Route>
+        <Route path="/poi/:poiId">{poiPage}</Route>
+        <Route path="/background">{backgroundPage}</Route>
+        <Route path="/texts">{textsPage}</Route>
+        <Route path="/about-us">{aboutUsPage}</Route>
+        <Route path="/imprint">{imprintPage}</Route>
+        <Route path="*">
+          <NoMatchPage />
         </Route>
       </Switch>
     </Router>
