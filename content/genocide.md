@@ -1,4 +1,4 @@
-# Völkermorde
+## Völkermorde
 
 Völkermord wird auch als Genozid bezeichnet und stammt vom griechischen Wort für Herkunft (génos) und dem lateinischen Wort für morden (caedere) ab. Der Begriff wurde 1944 von dem Juristen Raphael Lemkin geprägt, der persönlich vom Genozid durch das NS-Regime betroffen war.
 
