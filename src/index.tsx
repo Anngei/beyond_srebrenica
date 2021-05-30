@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from 'react-router-dom';
 import { reportWebVitals } from './reportWebVitals';
 import { logger } from './logger';
 import { Navigation } from './components/Navigation/Navigation';
@@ -11,6 +15,7 @@ import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
 import { Map } from './components/Map/Map';
 import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper';
 import { List } from './components/List';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +24,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/map">
           <FullWidthWrapper>
-            <Map />
+            <Map poi={['ikb-berlin', 'suedost-ev']} />
           </FullWidthWrapper>
         </Route>
         <Route path="/about-us">
@@ -54,10 +59,8 @@ ReactDOM.render(
             <List />
           </MaxWidthWrapper>
         </Route>
-        <Route path="/">
-          <FullWidthWrapper>
-            <Map />
-          </FullWidthWrapper>
+        <Route exact path="/">
+          <Redirect to={{ pathname: '/map' }} />
         </Route>
       </Switch>
     </Router>
