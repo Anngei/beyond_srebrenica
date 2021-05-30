@@ -7,7 +7,7 @@ import { Poi } from './Poi';
 export function Map({ poi }: { poi: string[] }): JSX.Element {
   const berlinCenter: LatLngExpression = [52.5207797, 13.4056501];
   const renderPoi: (poiId: string) => JSX.Element = (poiId: string) => (
-    <Poi _id={poiId} />
+    <Poi key={poiId} id={poiId} />
   );
 
   return (
