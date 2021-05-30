@@ -37,6 +37,11 @@ ReactDOM.render(
             />
           </MaxWidthWrapper>
         </Route>
+        <Route path="/imprint">
+          <MaxWidthWrapper>
+            <Content contentKey="imprint" />
+          </MaxWidthWrapper>
+        </Route>
         <Route path="/">
           <FullWidthWrapper>
             <Map />
