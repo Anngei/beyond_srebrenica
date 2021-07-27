@@ -21,7 +21,7 @@ import './index.css';
 
 const mapPage: (_props: any) => JSX.Element = (_props: any) => (
   <FullWidthWrapper>
-    <Map poi={['ikb-berlin', 'suedost-ev']} />
+    <Map poi={['ikb-berlin', 'suedost-ev', 'rosenduft']} />
   </FullWidthWrapper>
 );
 
