@@ -36,9 +36,10 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
     <h1>Hintergrund</h1>
     <Accordion
       elements={{
-        duldung: 'Duldung',
         genocide: 'Begriff Völkermord',
+        duldung: 'Duldung',
         lawsuit: 'Gerichtsverfahren',
+        multidirectional_memory: 'Multidirektionale Erinnerung',
       }}
     />
   </MaxWidthWrapper>
