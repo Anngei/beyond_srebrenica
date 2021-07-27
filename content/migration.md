@@ -1,0 +1,21 @@
+Migration aus (Post-) Jugoslawien
+
+Migration gab es schon immer! Diese Erkenntnis ist nichts neues, doch muss leider immer wieder daran erinnert werden. Auch für Menschen aus dem ehemaligen Jugoslawien war Deutschland ein Einwanderungsland. Die Migration aus dem ehemaligen Jugoslawien fand jedoch nicht erst im Zuge des Jugoslawienkrieges statt, sondern hat auch ihre Geschichte in der Zeit der Anwerbepolitik der 1950er und vor allem der 1960er Jahre in der Bundesrepublik Deutschland. 
+In der Gruppe der ehemaligen Gastarbeiter\*innen waren auch Menschen aus dem ehemaligen Jugoslawien vertreten und konnten durch ihre Arbeit in der Industrie das sogenannte „Wirtschaftswunder“ mitgestalten. Durch die Unterzeichnung des Anwerbeabkommens durch den damaligen Präsidenten Jugoslawiens Josep Broz Tito und dem Bundeskanzler Willy Brandt fanden ab dem Jahre 1968 die ersten Migrationsbewegungen in die Bundesrepublik aus dem ehemaligen Jugoslawien statt.  Zuvor gab es schon ähnliche Abkommen zwischen Österreich (1964), Schweden (1966) und Frankreich (1967) und Jugoslawien. 
+
+Die ehemaligen „Gastarbeiter\*innen“ aus Jugoslawien waren nicht – wie oft behauptet wird – die Ärmsten unter den Armen, sondern stammten eher aus der Mittelschicht, was auch auf andere „Gastarbeiter*innen“ wie zum Beispiel aus der Türkei oder auch Italien zutrifft.
+Bei den jugoslawischen „Gastarbeiter\*innen“ war jedoch der Anteil an Frauen im Vergleich zu anderen migrantischen Gruppe in dieser Zeit besonders hoch: So waren knapp 50 Prozent unter ihnen Frauen. 
+Um das Jahr 1973 erreichte die Zahl der in Deutschland lebenden „Gastarbeiter*innen“ ihren Höhepunkt. So lebten knapp 700.000 Menschen aus dem ehemaligen Jugoslawien in Deutschland. Meist lebten die ehemaligen Gastarbeiter*innen in der Nähe von wichtigen Industriestandorten der Bundesrepublik.
+1973 war aber auch das Jahr, in dem der offizielle Anwerbestopp in der Bundesrepublik beschlossen wurde, was unter anderem durch den damaligen „Ölpreisschock“ begründet wurde. Danach war es nicht mehr möglich neue Arbeitsverhältnisse mit Ausländer*innen zu schließen; die bestehenden Arbeitsverhältnisse waren davon jedoch unberührt. Vor allem kamen ab 1973 dann die Angehörigen der Gastarbeiter*innen in die Bundesrepublik nach, was ab dem Anwerbestopp eine der wenigen Möglichkeiten war, in die BRD zuzuwandern. 
+
+Lebten im Jahre 1990 um die 663.000 Menschen aus dem ehemaligen Jugoslawien in Deutschland, wuchs die Zahl im Verlauf des Jugoslawienkrieges weiter an. Denn dieser Krieg verursachte viel Zerstörung und Tote und hinterließ gleichzeitig Menschen, die in ihrem Land keine Zukunft mehr sahen und Sicherheit für sich und ihre Familien in einem neuen Land suchten – sogenannte Flüchtlinge. 
+Eines dieser Länder, was Schutz geben konnte, war Deutschland. Im Jahre 1992 nahm Deutschland um die 341.000 Geflüchtete auf. 
+Die Integration der Geflüchteten konnte zwar schon auf altbewährte Erfahrungen im Umgang mit den ehemaligen jugoslawischen „Gastarbeiter*innen“ aufbauen, jedoch unterschied sich die Migration in den 1990er Jahren vor allem in der Frage nach dem Aufenthaltsstatus. 
+Die Angst vor einer Abschiebung war bei vielen Geflüchteten in dieser Zeit präsent. 
+
+Migration aus dem ehemaligen Jugoslawien nach Deutschland kann nicht nur als Folge des Krieges gesehen werden.
+Interessant bleibt es, wie die ehemaligen „Gastarbeiter*innen“ und die Geflüchteten des Jugoslawienkrieges heute in Deutschland zusammenleben. 
+Welche Erfahrungen dieser unterschiedlichen Migrationsbewegungen welchen Einfluss auf die jeweiligen Personen und ihr Zusammenleben in der „Community“ haben. Außerdem stellt sich die Frage, inwiefern die Erinnerungen an den Jugoslawienkrieg, aber auch allen voran an Srebrenica bei dem ehemaligen Gastarbeiter*innen und den vor Krieg aus (Post-)Jugoslawien geflüchteten Menschen sich unterscheiden oder auch ähneln. 
+
+Verwendete Literatur
+Pascal Goeke, Transnationale Migrationen. Post-jugoslawische Biografien in der Weltgesellschaft. Bielefeld 2007. 
