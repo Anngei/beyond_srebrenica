@@ -1,0 +1,1 @@
+## Kommunikatives und kulturelles Gedächnis
