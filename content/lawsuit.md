@@ -9,3 +9,16 @@ Hasan Nuhanović, Übersetzer für die niederländische UN-Truppe Dutchbat und �
 2014 erklärte das Bezirksgericht in Den Haag die Niederlande jedoch mitschuldig an den Massakern. Eine Teilschuld von zehn Prozent am Völkermord wurde 2019 durch den Hohen Rat bestätigt.
 
 Eine Schwierigkeit für die Strafjustiz stellt das Ausmaß der Verbrechen dar, die im Zusammenhang mit der ethnischen Säuberung an bosnischen Muslim:innen stehen. Bis heute ist es nicht gelungen, sämtliche an den Verbrechen beteiligte Personen ausfindig zu machen und zu verurteilen.
+
+Quellen:
+
+Birkenkötter, Hannah: Wessen Verantwortung, welches Gericht? In: Zeitschrift Vereinte Nationen, 3/2015, Berliner Wissenschafts-Verlag. S. 114ff.
+
+Gamawa, Yusuf Ibrahim: International Intervention and Genocide in Bosnia. In: Advances in Social Sciences Research Journal. Ausgabe 4/7. Society for Science and Education United Kingdom, 2017. S. 1ff.
+
+Akrap, Doris: “Das war der ultimative Weckruf”. In: TAZ vom 11.07.2020.
+
+Rathfelder, Erich: Feigheit bleibt unbestraft. In: TAZ vom 23.09.2016.
+
+Rathfelder, Erich: Ein bisschen Tradition. In: TAZ vom 21.11.2020.
+
