@@ -61,6 +61,15 @@ const reportagePage: (_props: any) => JSX.Element = (_props: any) => (
   </MaxWidthWrapper>
 );
 
+const ReportageDetailPage: (_props: any) => JSX.Element = (_props: any) => {
+    const { id } = useParams<{ id: string }>();
+    return (
+        <MaxWidthWrapper>
+            <Content contentKey={`reportagen/${id}/full`} />
+        </MaxWidthWrapper>
+    );
+}
+
 const PoiPage: (_props: any) => JSX.Element = (_props: any) => {
   const { poiId } = useParams<{ poiId: string }>();
   return (
@@ -94,7 +103,8 @@ ReactDOM.render(
           <PoiPage />
         </Route>
         <Route path="/background">{backgroundPage}</Route>
-        <Route path="/reportage">{reportagePage}</Route>
+        <Route exact path="/reportage">{reportagePage}</Route>
+        <Route exact path="/reportage/:id"><ReportageDetailPage/></Route>
         <Route path="/about-us">{aboutUsPage}</Route>
         <Route path="/imprint">{imprintPage}</Route>
         <Route path="*">
