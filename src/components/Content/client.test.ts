@@ -2,7 +2,7 @@ import { getContent } from './client';
 
 describe('content client', () => {
   it('should return html formatted markdown', () => {
-    const actual = getContent('about-us');
+    const actual = getContent('/pages/about-us');
 
     return expect(actual).resolves.toBeTruthy();
   });
