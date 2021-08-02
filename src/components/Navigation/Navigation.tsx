@@ -12,7 +12,7 @@ export function Navigation(_props: any): JSX.Element {
         <section className={styles.links}>
           <Link to="/map">Karte</Link>
           <Link to="/background">Hintergrund</Link>
-          <Link to="/texts">Texte</Link>
+          <Link to="/reportage">Reportagen</Link>
           <Link to="/about-us">Über uns</Link>
           <Link to="/imprint">Impressum</Link>
         </section>
