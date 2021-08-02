@@ -6,8 +6,10 @@ Adalbertstraße 94
 
 ## Interviews 
 
-**Damir Krdžić** floh vor fast 30 Jahren aus Bosnien nach Berlin und spricht über seine Ankunft in Berlin, den Verlust
-des Vaters sowie die Forderung an den Genozid zu Erinnern. [mehr dazu](/reportage/krdzic)
-
 **Meho Travljanin** ist der Vorsitzende des Islamischen Kulturzentrums der Bosniaken in Berlin. Er erzählt uns im
-Interview über seine Arbeit und die Bedeutung des Ortes in der bosnischen Community. [mehr dazu](/reportage/travljanin)
+Interview über seine Arbeit und die Bedeutung des Ortes in der bosnischen Community.
+<br />[mehr dazu](/reportage/travljanin)
+
+**Damir Krdžić** floh vor fast 30 Jahren aus Bosnien nach Berlin und spricht über seine Ankunft in Berlin, den Verlust
+des Vaters sowie die Forderung an den Genozid zu Erinnern.
+<br />[mehr dazu](/reportage/krdzic)
