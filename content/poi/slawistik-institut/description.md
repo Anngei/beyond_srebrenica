@@ -1,5 +1,6 @@
 [&#5176; Zurück](/map)
-# Islamisches Kulturzentrum der Bosniaken in Berlin e.V.
+# Institut für Slawistik und Hungarologie
 
-Adalbertstraße 94
-<br />10999 Berlin
+Unter den Linden 6
+<br />10099 Berlin
+
