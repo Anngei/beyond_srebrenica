@@ -1,4 +1,2 @@
-Nadira Music ist Slawistin und beschäftigt sich mit Sprachräumen in
-Südosteuropa. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-aliquyam
+Nadira Music forscht am Institut für Slawistik und Hungarologie an der Humboldt-Universität zu Berlin und erzählt
+uns in einem Interview über sprachlichen Besonderheiten des multiethnischen Bosnien und Herzegowina.
