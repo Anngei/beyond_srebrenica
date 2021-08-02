@@ -4,4 +4,4 @@
 Großbeerenstraße 88
 <br />10963 Berlin
 
-Bald wird es hier zwei Reportagen geben.
+Bald wird es zu diesem Ort zwei Reportagen geben.
