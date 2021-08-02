@@ -57,7 +57,7 @@ const imprintPage: (_props: any) => JSX.Element = (_props: any) => (
 const reportagePage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
     <h1>Reportagen</h1>
-    <List reports={['music', 'krdzic', 'travljaninikb']} />
+    <List reports={['music', 'krdzic', 'travljanin']} />
   </MaxWidthWrapper>
 );
 
