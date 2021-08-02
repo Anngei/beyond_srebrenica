@@ -45,9 +45,10 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
     <Accordion
       elements={{
         genocide: 'Begriff Völkermord',
-        duldung: 'Duldung',
+        verlauf_bosnienkrieg: 'Verlauf des Bosnienkrieges',
         lawsuit: 'Gerichtsverfahren',
         migration: 'Migration aus (Post-) Jugoslawien',
+        duldung: 'Duldung',
         gedenken: 'Wichtige Gedenktage',
       }}
     />
