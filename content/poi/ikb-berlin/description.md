@@ -10,6 +10,7 @@ Adalbertstraße 94
 Interview über seine Arbeit und die Bedeutung des Ortes in der bosnischen Community.
 <br />[mehr dazu](/reportage/travljanin)
 
-**Damir Krdžić** floh vor fast 30 Jahren aus Bosnien nach Berlin und spricht über seine Ankunft in Berlin, den Verlust
-des Vaters sowie die Forderung an den Genozid zu Erinnern.
+**Damir Krdžić** (stellv. Vorsitzender des Islamischen Kulturzentrums der Bosniaken in Berlin) floh vor fast 30 Jahren
+aus Bosnien nach Berlin und spricht über seine Ankunft in Berlin, den Verlust des Vaters sowie die Forderung an den
+Genozid zu Erinnern.
 <br />[mehr dazu](/reportage/krdzic)
