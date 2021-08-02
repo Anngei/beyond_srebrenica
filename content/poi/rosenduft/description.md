@@ -1,3 +1,7 @@
+[&#5176; Zurück](/map)
 ## Garten Rosenduft
 
-asdasd
+Möckernstraße 43-44
+<br />10963 Berlin
+
+Bald wird es zu diesem Ort eine Reportage geben.
