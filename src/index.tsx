@@ -46,9 +46,9 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
       elements={{
         genocide: 'Begriff Völkermord',
         duldung: 'Duldung',
-        gedenken: 'Gedenken',
         lawsuit: 'Gerichtsverfahren',
-        multidirectional_memory: 'Multidirektionale Erinnerung',
+        migration: 'Migration aus (Post-) Jugoslawien',
+        gedenken: 'Wichtige Gedenktage',
       }}
     />
   </MaxWidthWrapper>

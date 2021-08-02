@@ -1,5 +1,3 @@
-## Duldung
-
 Was ist das überhaupt?
 
 Eine Duldung ist zunächst eine „vorübergehende Aufhebung der Abschiebung“ eines/-r ausreisepflichtigen Ausländer\*in und deshalb eben kein Aufenthaltstitel.  Demnach besitzen geduldete Menschen in Deutschland keine rechtmäßige Aufenthaltserlaubnis und können jederzeit abgeschoben werden. Die Duldung fungiert demnach eher als eine Bescheinigung über die Registrierung des/ -r Geduldeten in Deutschland, wonach der Strafbestand des illegalen Aufenthalts wegfällt.   
