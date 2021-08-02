@@ -54,10 +54,10 @@ const imprintPage: (_props: any) => JSX.Element = (_props: any) => (
   </MaxWidthWrapper>
 );
 
-const textsPage: (_props: any) => JSX.Element = (_props: any) => (
+const reportagePage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
-    <h1>Interviews</h1>
-    <List />
+    <h1>Reportagen</h1>
+    <List reports={['music', 'krdzic', 'travljaninikb']} />
   </MaxWidthWrapper>
 );
 
@@ -94,7 +94,7 @@ ReactDOM.render(
           <PoiPage />
         </Route>
         <Route path="/background">{backgroundPage}</Route>
-        <Route path="/texts">{textsPage}</Route>
+        <Route path="/reportage">{reportagePage}</Route>
         <Route path="/about-us">{aboutUsPage}</Route>
         <Route path="/imprint">{imprintPage}</Route>
         <Route path="*">
