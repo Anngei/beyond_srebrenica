@@ -38,7 +38,7 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
       elements={{
         genocide: 'Begriff Völkermord',
         duldung: 'Duldung',
-        Gedenken: 'Gedenken',
+        gedenken: 'Gedenken',
         lawsuit: 'Gerichtsverfahren',
         multidirectional_memory: 'Multidirektionale Erinnerung',
       }}

@@ -1,4 +1,4 @@
-Migration aus (Post-) Jugoslawien
+## Migration aus (Post-) Jugoslawien
 
 Migration gab es schon immer! Diese Erkenntnis ist nichts neues, doch muss leider immer wieder daran erinnert werden. Auch für Menschen aus dem ehemaligen Jugoslawien war Deutschland ein Einwanderungsland. Die Migration aus dem ehemaligen Jugoslawien fand jedoch nicht erst im Zuge des Jugoslawienkrieges statt, sondern hat auch ihre Geschichte in der Zeit der Anwerbepolitik der 1950er und vor allem der 1960er Jahre in der Bundesrepublik Deutschland. 
 In der Gruppe der ehemaligen Gastarbeiter\*innen waren auch Menschen aus dem ehemaligen Jugoslawien vertreten und konnten durch ihre Arbeit in der Industrie das sogenannte „Wirtschaftswunder“ mitgestalten. Durch die Unterzeichnung des Anwerbeabkommens durch den damaligen Präsidenten Jugoslawiens Josep Broz Tito und dem Bundeskanzler Willy Brandt fanden ab dem Jahre 1968 die ersten Migrationsbewegungen in die Bundesrepublik aus dem ehemaligen Jugoslawien statt.  Zuvor gab es schon ähnliche Abkommen zwischen Österreich (1964), Schweden (1966) und Frankreich (1967) und Jugoslawien. 
