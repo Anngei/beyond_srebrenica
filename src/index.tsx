@@ -29,7 +29,7 @@ const mapPage: (_props: any) => JSX.Element = (_props: any) => (
 
 const aboutUsPage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
-    <Content contentKey="about-us" />
+    <Content contentKey="pages/about-us" />
   </MaxWidthWrapper>
 );
 
@@ -50,7 +50,7 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
 
 const imprintPage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
-    <Content contentKey="imprint" />
+    <Content contentKey="pages/imprint" />
   </MaxWidthWrapper>
 );
 
