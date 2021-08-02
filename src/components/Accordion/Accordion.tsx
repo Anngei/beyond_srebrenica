@@ -54,7 +54,7 @@ function renderTerm(
         className={contentStyle(contentState[contentKey])}
         data-testid={contentTestId(contentState[contentKey])}
       >
-        <Content contentKey={contentKey} />
+        <Content contentKey={`background/${contentKey}`} />
       </div>
     </div>
   );
