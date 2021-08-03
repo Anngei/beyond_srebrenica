@@ -1,0 +1,1 @@
+Emina Haye ist als Lehrbeauftragte im Bereich BKMS-Sprachpraxis tätig. Anhand ihre eigene Erfahrungen im Leben und in der (akademischen) Arbeit erzählte Haye uns über die Komplikationen der Duldung, Identität in Bosnien-Herzegowina und ihre Einsichten über die heutige Erinnerungskultur.
