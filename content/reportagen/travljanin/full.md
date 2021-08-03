@@ -1,4 +1,4 @@
-**Das ISLAMISCHE KULTURZENTRUM DER BOSNIAKEN e.V.** 
+## Das ISLAMISCHE KULTURZENTRUM DER BOSNIAKEN e.V.
 
 Für viele bosniakische Menschen, die im Zuge des Jugoslawienkrieges in den 1990er nach Berlin geflohen sind, war der Stadtteil Kreuzberg einer ihrer ersten Berührungspunkte mit dieser Stadt und ihrem neuen Leben in Deutschland. Unweit des Kottbusser Tors liegt das „Islamische Kulturzentrum der Bosniaken e.V.“, welches als zentraler Ort des bosniakisch-muslimischen Lebens in Berlin gilt. Wir sprachen mit dem Vorsitzenden des islamischen Kulturvereins Meho Travljanin über die Entstehung und Geschichte des Vereins und auch über das sich wandelnde Selbstbild einer bosniakischen Community im Kontext des Wandels der Erinnerung an Srebrenica (and Beyond). 
 
