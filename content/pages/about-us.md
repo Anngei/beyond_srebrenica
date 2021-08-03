@@ -6,7 +6,7 @@ Masterstudiums realisieren wir unser Digitalprojekt *Beyond Srebrenica*. Hier m�
 uns der Berliner Erinnerungskultur an den Bosnienkrieg sowie dem
 Genozid in Srebrenica im Jahr 1995 auseinandersetzen. Ziel war es einen
 digitalen Raum zu schaffen, in dem wir Individuen
-und Einrichtungen vorstellen und diese zu Wort kommen lassen - dabei sprachen wir nicht nur mit Überlebenden und Angehörigen der Opfer sondern auch mit jungen Deutsch-Bosniak:innen einer neuen Generation. Sie alle gedenken den Opfern. Dabei spielen unterschiedliche Orte, Geschichten und Ereignisse eine wichtige Rolle. 
+und Einrichtungen vorstellen und diese zu Wort kommen lassen – dabei sprachen wir nicht nur mit Überlebenden und Angehörigen der Opfer sondern auch mit jungen Deutsch-Bosniak:innen einer neuen Generation. Sie alle gedenken den Opfern. Dabei spielen unterschiedliche Orte, Geschichten und Ereignisse eine wichtige Rolle. 
 
 Wir als Historiker:Innen führen Gespräche und Recherchen, um diese in einer Berliner Karte sichtbar zu machen.
 
