@@ -1,0 +1,1 @@
+Sabrina Halilović studiert Slawische Sprachen und Literatur an der Humboldt Universität und beschäftigt sich viel mit dem Thema Srebrenica. Wir sprachen mit ihr über ihre Erfahrungen als Teil der zweiten Generation Bosniak:innen in Berlin und ihre Wünsche für den Geschichtsunterricht.
