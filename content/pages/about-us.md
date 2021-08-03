@@ -8,7 +8,7 @@ Genozid in Srebrenica im Jahr 1995 auseinandersetzen.  Dafür sprachen wir mit �
 
 Ziel war es deshalb einen digitalen Raum zu schaffen, in dem wir die interviewten Individuen und Einrichtungen vorstellen und sie dadurch zu Wort kommen lassen.
 
-Eine **Motivation** für unser Projekt war hierbei die mangelnde Präsenz der Themen Bosnienkrieg und Genozid in Srebrenica
+Eine **Motivation** für unser Projekt war die mangelnde Präsenz der Themen Bosnienkrieg und Genozid in Srebrenica
 im Bereich Bildung sowie in der öffentlichen Berichterstattung. Es
 hat uns zu Beginn gewundert, dass selbst wir als Master-Geschichtsstudierende so wenig
 über die Thematiken wussten und bisher im Studium, der Schule oder
