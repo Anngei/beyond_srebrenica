@@ -1,6 +1,6 @@
 # Über uns
 
-**Wir** sind eine Gruppe bestehend aus fünf Studierenden der Public
+Wir sind eine Gruppe bestehend aus fünf Studierenden der Public
 History an der Freien Universität Berlin. Im Rahmen unseres
 Masterstudiums realisieren wir dieses Digitalprojekt, in welchem wir
 uns der Berliner Erinnerungskultur an den Bosnienkrieg sowie dem
