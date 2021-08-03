@@ -4,7 +4,7 @@ Wir sind eine Gruppe bestehend aus fünf Studierenden der Public
 History an der Freien Universität Berlin. Im Rahmen unseres
 Masterstudiums realisieren wir unser Digitalprojekt *Beyond Srebrenica*. Hier möchten wir
 uns der Berliner Erinnerungskultur an den Bosnienkrieg sowie dem
-Genozid in Srebrenica im Jahr 1995 auseinandersetzen.  Dafür sprachen mit Überlebenden und Angehörigen der Opfer sowie auch mit jungen Deutsch-Bosniak:innen einer neuen Generation. Sie alle gedenken den Opfern. Dabei spielen unterschiedliche Orte, Geschichten und Ereignisse eine wichtige Rolle. 
+Genozid in Srebrenica im Jahr 1995 auseinandersetzen.  Dafür sprachen wir mit Überlebenden und Angehörigen der Opfer sowie auch mit jungen Deutsch-Bosniak:innen einer neuen Generation. Sie alle gedenken den Opfern. Dabei spielen unterschiedliche Orte, Geschichten und Ereignisse eine wichtige Rolle. 
 
 Ziel war es deshalb einen digitalen Raum zu schaffen, in dem wir die interviewten Individuen und Einrichtungen vorstellen und diese dadurch zu Wort kommen lassen.
 
