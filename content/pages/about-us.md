@@ -6,7 +6,7 @@ Masterstudiums realisieren wir dieses Digitalprojekt, in welchem wir
 uns der Berliner Erinnerungskultur an den Bosnienkrieg sowie dem
 Genozid in Srebrenica im Jahr 1995 widmen. Ziel war es einen
 digitalen Raum zu schaffen, in dem wir Individuen
-und Einrichtungen vorstellen und diese zu Wort kommen lassen. Wir als Historiker:Innen führen
+und Einrichtungen vorstellen und diese zu Wort kommen lassen. Wir als Historiker:Innen führen deshalb
 Gespräche und Recherchen, um diese in einer Berliner Karte sichtbar zu machen.
 
 Eine **Motivation** für unser Projekt war hierbei die mangelnde Präsenz der Themen Bosnienkrieg und Genozid in Srebrenica
