@@ -29,7 +29,7 @@ Musić berichtet von Fernsehsendern, die in wöchentlichem Rhythmus ihre Sprache
 
 **Mit dem Krieg kam der Separatismus**
 
-Bosnien und Herzegowina setzt sich seit dem Abkommen von Dayton aus zwei Entitäten zusammen: die Republika Srpska und die Föderation, in denen die Sprachen unterschiedlich stark vertreten sind, auch wenn in allen Teilen des Landes jede der Amtssprachen gesprochen wird.
+Bosnien und Herzegowina setzt sich seit dem Abkommen von Dayton 1995 aus zwei Entitäten zusammen: die Republika Srpska und die Föderation, in denen die Sprachen unterschiedlich stark vertreten sind, auch wenn in allen Teilen des Landes jede der Amtssprachen gesprochen wird.
 
 Im Alltag, so Musić, werde vor allem Wert auf die sprachlichen Unterschiede gelegt. Die Regierung in Bosnien und Herzegowina tendiere in der Sprachpolitik zum Separatismus. In der Republika Srpska werde oft versucht, die serbische Sprache durchzusetzen: Schulen unternehmen Anstrengungen, ausschließlich das kyrillische Alphabet zu unterrichten und dem Wort „Bosnisch“ auszuweichen. Bosniak:innen werden dort immer wieder aufgefordert, ihre Sprache als „Serbisch“ zu bezeichnen. Die Probleme, die es zwischen Bosniak:innen, Kroat:innen und Serb:innen gibt, spiegeln sich in dem Gebrauch der Sprache wider, erklärt Musić.
 
