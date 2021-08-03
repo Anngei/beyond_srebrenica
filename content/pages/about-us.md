@@ -6,7 +6,7 @@ Masterstudiums realisieren wir unser Digitalprojekt *Beyond Srebrenica*. Hier m�
 uns der Berliner Erinnerungskultur an den Bosnienkrieg sowie dem
 Genozid in Srebrenica im Jahr 1995 auseinandersetzen.  Dafür sprachen wir mit Überlebenden und Angehörigen der Opfer sowie auch mit jungen Deutsch-Bosniak:innen einer neuen Generation. Sie alle gedenken den Opfern und halten die Erinnerung aufrecht. Dabei spielen unterschiedliche Orte, Geschichten und Ereignisse eine wichtige Rolle. 
 
-Ziel war es deshalb einen digitalen Raum zu schaffen, in dem wir die interviewten Individuen und Einrichtungen vorstellen und diese dadurch zu Wort kommen lassen.
+Ziel war es deshalb einen digitalen Raum zu schaffen, in dem wir die interviewten Individuen und Einrichtungen vorstellen und sie dadurch zu Wort kommen lassen.
 
 Eine **Motivation** für unser Projekt war hierbei die mangelnde Präsenz der Themen Bosnienkrieg und Genozid in Srebrenica
 im Bereich Bildung sowie in der öffentlichen Berichterstattung. Es
