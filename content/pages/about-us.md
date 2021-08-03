@@ -17,7 +17,7 @@ wir einen Beitrag dazu leisten, dass der Bosnienkrieg und der Genozid
 in Srebrenica sichtbarer werden sowie die Geschichte und die 
 Opfer nicht in Vergessenheit geraten.
 
-Der **Titel des Projekts *Srebrenica and Beyond*** bezieht sich darauf,
+Der **Titel des Projekts *Beyond Srebrenica*** bezieht sich darauf,
 dass muslimische Bosniak:innen nicht nur in den fünf Julitagen in
 Srebrenica Opfer von Kriegsverbrechen wurden und fliehen mussten,
 sondern auch in anderen bosnischen Städten und Dörfern in den
