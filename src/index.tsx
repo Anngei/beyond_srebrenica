@@ -16,7 +16,7 @@ import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
 import { Map } from './components/Map/Map';
 import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper';
 import { List } from './components/List';
-import './index.css';
+import './index.module.css';
 
 const MapPage: (_props: any) => JSX.Element = (_props: any) => (
   <FullWidthWrapper>
@@ -103,15 +103,15 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-            <Route index element={<MapPage/>} />
+          <Route index element={<MapPage />} />
           <Route path="poi/:poiId" element={<PoiPage />} />
-            <Route path="background" element={<BackgroundPage/>} />
+          <Route path="background" element={<BackgroundPage />} />
           <Route path="reportage">
-            <Route index element={<ReportagePage/>} />
+            <Route index element={<ReportagePage />} />
             <Route path=":id" element={<ReportageDetailPage />} />
           </Route>
-          <Route path="about-us" element={<AboutUsPage/>} />
-          <Route path="imprint" element={<ImprintPage/>} />
+          <Route path="about-us" element={<AboutUsPage />} />
+          <Route path="imprint" element={<ImprintPage />} />
           <Route path="*" element={<NoMatchPage />} />
         </Route>
       </Routes>

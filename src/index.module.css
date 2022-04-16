@@ -1,3 +1,8 @@
+@value colors: "./colors.css";
+@value background, text, primary, primary-dark from colors;
+@value sizes: "./sizes.css";
+@value font-size-normal from sizes;
+
 *,
 ::after,
 ::before {
@@ -16,17 +21,18 @@ html {
 
 body {
   margin: 0;
-  font-size: 1.4rem;
-  color: #333;
+  font-size: font-size-normal;
+  color: text;
+  background-color: background;
 }
 
 a {
   text-decoration: none;
-  color: #388e3c;
+  color: primary;
 }
 
 a:hover {
-  color: #5fb97c;
+  color: primary-dark;
 }
 
 h1,
