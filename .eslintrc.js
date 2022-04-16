@@ -17,6 +17,7 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "plugin:jest/recommended",
         "plugin:promise/recommended",
+        "plugin:import/recommended",
         "prettier",
     ],
     env: {

@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
+  Routes,
   Route,
-  Switch,
-  Redirect,
   useLocation,
   useParams,
 } from 'react-router-dom';
 import { reportWebVitals } from './reportWebVitals';
 import { logger } from './logger';
-import { Navigation } from './components/Navigation/Navigation';
+import { App } from './components/App';
 import { Content } from './components/Content/Content';
 import { Accordion } from './components/Accordion/Accordion';
 import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
@@ -19,7 +18,7 @@ import { FullWidthWrapper } from './components/FullWidthWrapper/FullWidthWrapper
 import { List } from './components/List';
 import './index.css';
 
-const mapPage: (_props: any) => JSX.Element = (_props: any) => (
+const MapPage: (_props: any) => JSX.Element = (_props: any) => (
   <FullWidthWrapper>
     <Map
       poi={[
@@ -33,13 +32,13 @@ const mapPage: (_props: any) => JSX.Element = (_props: any) => (
   </FullWidthWrapper>
 );
 
-const aboutUsPage: (_props: any) => JSX.Element = (_props: any) => (
+const AboutUsPage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
     <Content contentKey="pages/about-us" />
   </MaxWidthWrapper>
 );
 
-const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
+const BackgroundPage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
     <h1>Hintergrund</h1>
     <Accordion
@@ -55,13 +54,13 @@ const backgroundPage: (_props: any) => JSX.Element = (_props: any) => (
   </MaxWidthWrapper>
 );
 
-const imprintPage: (_props: any) => JSX.Element = (_props: any) => (
+const ImprintPage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
     <Content contentKey="pages/imprint" />
   </MaxWidthWrapper>
 );
 
-const reportagePage: (_props: any) => JSX.Element = (_props: any) => (
+const ReportagePage: (_props: any) => JSX.Element = (_props: any) => (
   <MaxWidthWrapper>
     <h1>Reportagen</h1>
     <List reports={['krdzic', 'haye', 'travljanin', 'music', 'halilovic']} />
@@ -97,34 +96,27 @@ const NoMatchPage: (_props: any) => JSX.Element = (_props: any) => {
   );
 };
 
-ReactDOM.render(
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = ReactDOM.createRoot(document.getElementById('root')!);
+root.render(
   <React.StrictMode>
-    <Router>
-      <Navigation />
-      <Switch>
-        <Route exact path="/">
-          <Redirect to={{ pathname: '/map' }} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+            <Route index element={<MapPage/>} />
+          <Route path="poi/:poiId" element={<PoiPage />} />
+            <Route path="background" element={<BackgroundPage/>} />
+          <Route path="reportage">
+            <Route index element={<ReportagePage/>} />
+            <Route path=":id" element={<ReportageDetailPage />} />
+          </Route>
+          <Route path="about-us" element={<AboutUsPage/>} />
+          <Route path="imprint" element={<ImprintPage/>} />
+          <Route path="*" element={<NoMatchPage />} />
         </Route>
-        <Route path="/map">{mapPage}</Route>
-        <Route path="/poi/:poiId">
-          <PoiPage />
-        </Route>
-        <Route path="/background">{backgroundPage}</Route>
-        <Route exact path="/reportage">
-          {reportagePage}
-        </Route>
-        <Route exact path="/reportage/:id">
-          <ReportageDetailPage />
-        </Route>
-        <Route path="/about-us">{aboutUsPage}</Route>
-        <Route path="/imprint">{imprintPage}</Route>
-        <Route path="*">
-          <NoMatchPage />
-        </Route>
-      </Switch>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById('main')
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 reportWebVitals(logger.info);

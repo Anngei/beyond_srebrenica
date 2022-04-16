@@ -13,10 +13,5 @@ export function Content({ contentKey }: { contentKey: string }): JSX.Element {
       });
   }, [contentKey]);
 
-  return (
-    <section
-      /* eslint-disable-next-line react/no-danger */
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  );
+  return <section dangerouslySetInnerHTML={{ __html: html }} />;
 }
