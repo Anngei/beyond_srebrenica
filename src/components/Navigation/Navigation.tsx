@@ -10,11 +10,12 @@ export function Navigation(_props: any): JSX.Element {
           Beyond Srebrenica
         </Link>
         <section className={styles.links}>
-          <Link to="/map">Karte</Link>
           <Link to="/background">Hintergrund</Link>
           <Link to="/reportage">Reportagen</Link>
           <Link to="/about-us">Über uns</Link>
-          <Link to="/imprint" style={{marginRight: 0}}>Impressum</Link>
+          <Link to="/imprint" style={{ marginRight: 0 }}>
+            Impressum
+          </Link>
         </section>
       </section>
     </nav>
