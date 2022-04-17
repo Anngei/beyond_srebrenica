@@ -4,6 +4,7 @@ import { MaxWidthWrapper } from '../components/MaxWidthWrapper/MaxWidthWrapper';
 import styles from './home.module.css';
 import { Content } from '../components/Content/Content';
 import { Button } from '../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 export function Home(_props: any): JSX.Element {
   return (
@@ -37,6 +38,42 @@ export function Home(_props: any): JSX.Element {
         </div>
         <div className={styles.cardAction}>
           <Button to="/poi">Entdecke mehr</Button>
+        </div>
+      </section>
+
+      <section className={styles.reports}>
+        <div className={styles.reportsTitle}>
+          <h3>
+            Reportagen <Link to="/reportage">weiterlesen</Link>
+          </h3>
+        </div>
+        <div className={styles.contentCard}>
+          <div
+            className={styles.cardHeadline}
+            style={{ borderRadius: '1.2rem' }}
+          >
+            <Content contentKey={`/reportagen/krdzic/name`} />
+          </div>
+          <div className={styles.cardText}>
+            <Content contentKey={`/reportagen/krdzic/intro`} />
+          </div>
+          <div className={styles.cardAction}>
+            <Button to="reportage/krdzic">weiterlesen</Button>
+          </div>
+        </div>
+        <div className={styles.contentCard}>
+          <div
+            className={styles.cardHeadline}
+            style={{ borderRadius: '1.2rem' }}
+          >
+            <Content contentKey={`/reportagen/haye/name`} />
+          </div>
+          <div className={styles.cardText}>
+            <Content contentKey={`/reportagen/haye/intro`} />
+          </div>
+          <div className={styles.cardAction}>
+            <Button to="reportage/haye">weiterlesen</Button>
+          </div>
         </div>
       </section>
     </MaxWidthWrapper>
