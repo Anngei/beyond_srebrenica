@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import { LatLngExpression } from 'leaflet';
 import { Poi } from './Poi';
-import style from './Map.module.css';
+import styles from './Map.module.css';
 
-export function Map({ poi }: { poi: string[] }): JSX.Element {
+export function Map({
+  poi,
+  style,
+}: {
+  poi: string[];
+  style?: CSSProperties | undefined;
+}): JSX.Element {
   const berlinCenter: LatLngExpression = [52.5170365, 13.3888599];
   const renderPoi: (poiId: string) => JSX.Element = (poiId: string) => (
     <Poi key={poiId} id={poiId} />
@@ -12,7 +18,12 @@ export function Map({ poi }: { poi: string[] }): JSX.Element {
   poi.map(renderPoi);
 
   return (
-    <MapContainer center={berlinCenter} zoom={13} className={style.map}>
+    <MapContainer
+      center={berlinCenter}
+      zoom={13}
+      className={styles.map}
+      style={style}
+    >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
