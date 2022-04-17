@@ -20,7 +20,7 @@ export function Map({
   return (
     <MapContainer
       center={berlinCenter}
-      zoom={13}
+      zoom={12}
       className={styles.map}
       style={style}
     >
