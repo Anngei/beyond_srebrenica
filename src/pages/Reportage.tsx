@@ -1,8 +1,8 @@
+import React from 'react';
 import { MaxWidthWrapper } from '../components/MaxWidthWrapper/MaxWidthWrapper';
 import { Content } from '../components/Content/Content';
 import { List } from '../components/List';
 import { useParams } from 'react-router-dom';
-import React from 'react';
 
 export function ReportagePage(_props: any): JSX.Element {
   return (

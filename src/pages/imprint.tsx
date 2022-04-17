@@ -1,6 +1,6 @@
+import React from 'react';
 import { MaxWidthWrapper } from '../components/MaxWidthWrapper/MaxWidthWrapper';
 import { Content } from '../components/Content/Content';
-import React from 'react';
 
 export function ImprintPage(_props: any): JSX.Element {
   return (
