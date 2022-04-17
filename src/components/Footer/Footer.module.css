@@ -1,0 +1,23 @@
+@value sizes: "../../sizes.css";
+@value font-size-small, spacer from sizes;
+@value colors: "../../colors.css";
+@value secondary, on-secondary-container from colors;
+
+.footer {
+  height: 12rem;
+  padding-bottom: 2rem;
+  font-size: font-size-small;
+  display: flex;
+  justify-content: center;
+  gap: spacer;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: secondary;
+}
+
+.footer a:hover {
+  color: on-secondary-container;
+}
