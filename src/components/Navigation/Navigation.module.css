@@ -1,7 +1,7 @@
 @value sizes: "../../sizes.css";
 @value full-width, spacer from sizes;
 @value colors: "../../colors.css";
-@value background, outline, primary, primary-dark from colors;
+@value background, outline, primary, on-primary-container from colors;
 
 .navigation {
   height: 6.4rem;
@@ -23,7 +23,7 @@
 }
 
 .navigation a {
-  color: primary-dark;
+  color: on-primary-container;
   margin-right: spacer;
 }
 

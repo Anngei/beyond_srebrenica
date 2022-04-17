@@ -1,5 +1,5 @@
 @value colors: "./colors.css";
-@value background, text, primary, primary-dark from colors;
+@value background, on-background, primary, on-primary-container from colors;
 @value sizes: "./sizes.css";
 @value font-size-normal from sizes;
 
@@ -22,7 +22,7 @@ html {
 body {
   margin: 0;
   font-size: font-size-normal;
-  color: text;
+  color: on-background;
   background-color: background;
 }
 
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: primary-dark;
+  color: on-primary-container;
 }
 
 h1,
