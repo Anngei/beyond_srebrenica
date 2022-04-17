@@ -1,8 +1,14 @@
 @value sizes: "../../sizes.css";
-@value full-width from sizes;
+@value full-width, spacer from sizes;
 
 .maxWidth {
   margin: auto;
   width: 100%;
   max-width: full-width;
+}
+
+@media only screen and (max-width: 768px) {
+  .maxWidth {
+    padding: 0 spacer;
+  }
 }
