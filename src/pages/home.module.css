@@ -61,7 +61,10 @@
 
 .reportsTitle {
   width: 100%;
-  padding-bottom: gap;
+}
+
+.reportsTitle h3 {
+  padding: spacer 0 gap;
 }
 
 .reportsTitle a {
