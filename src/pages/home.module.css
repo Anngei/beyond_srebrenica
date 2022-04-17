@@ -1,0 +1,58 @@
+@value sizes: "../sizes.css";
+@value spacer, font-size-big, font-size-bigger, font-size-small, border-radius-size from sizes;
+@value colors: "../colors.css";
+@value surface from colors;
+
+.intro {
+  margin: 5rem 0 10rem;
+}
+
+.introTitle {
+  font-weight: bold;
+  font-size: font-size-big;
+  text-align: center;
+  margin: spacer 0 1rem;
+}
+
+.cardHeadline {
+  font-size: font-size-bigger;
+  font-weight: 500;
+  background-color: surface;
+  padding: 1.6rem 1.6rem 0.8rem;
+}
+
+.cardSubhead {
+  background-color: surface;
+  padding: 0 1.6rem 1.6rem;
+}
+
+.cardText {
+  background-color: surface;
+  font-size: font-size-small;
+  padding: 0 1.6rem 0.8rem;
+}
+
+.cardAction {
+  background-color: surface;
+  padding: 0 1.6rem 1.2rem;
+  border-radius: 0 0 border-radius-size border-radius-size;
+  text-align: right;
+}
+
+.widget {
+  border-radius: border-radius-size;
+  background-color: surface;
+  padding: spacer;
+  height: 40rem;
+  margin-bottom: spacer;
+}
+
+.widgetTitle {
+  margin: 0 0 spacer;
+  font-weight: 500;
+  font-size: font-size-small;
+}
+
+.widgetTitle p {
+  margin: 0;
+}
