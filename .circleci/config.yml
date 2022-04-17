@@ -56,7 +56,8 @@ jobs:
             - docker
 
   deploy-staging:
-    machine: true
+    machine:
+      image: ubuntu-2004:202201-02
     steps:
       - attach_workspace:
           at: ~/project
@@ -71,7 +72,8 @@ jobs:
             curl https://beyond-srebrenica-staging.herokuapp.com
 
   deploy-live:
-    machine: true
+    machine:
+      image: ubuntu-2004:202201-02
     steps:
       - attach_workspace:
           at: ~/project
