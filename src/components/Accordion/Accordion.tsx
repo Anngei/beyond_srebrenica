@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import styles from './Accordion.module.css';
 import { Content } from '../Content/Content';
+import styles from './Accordion.module.css';
+import 'remixicon/fonts/remixicon.css';
 
 function contentStyle(isShown: boolean): any {
   if (isShown) {
@@ -22,7 +23,7 @@ function renderTitle(contentIsShown: boolean, title: string): JSX.Element {
       <>
         <div>{title}</div>{' '}
         <div>
-          <i className="fas fa-chevron-up" />
+          <i className="ri-arrow-up-s-line" />
         </div>
       </>
     );
@@ -31,7 +32,7 @@ function renderTitle(contentIsShown: boolean, title: string): JSX.Element {
     <>
       <div>{title}</div>{' '}
       <div>
-        <i className="fas fa-chevron-down" />
+        <i className="ri-arrow-down-s-line" />
       </div>
     </>
   );
