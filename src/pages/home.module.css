@@ -34,7 +34,7 @@
 
 .cardAction {
   background-color: surface;
-  padding: 0 1.6rem spacer;
+  padding: 0.8rem 1.6rem spacer;
   border-radius: 0 0 border-radius-size border-radius-size;
   text-align: right;
 }
@@ -45,6 +45,16 @@
 
 .contentCard .cardText {
   height: 10.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentCard {
+    width: 100%;
+  }
+
+  .contentCard .cardText {
+    height: auto;
+  }
 }
 
 .contentCard p {
