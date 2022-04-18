@@ -1,5 +1,5 @@
 import React, { Dispatch, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import styles from './Navigation.module.css';
 import 'remixicon/fonts/remixicon.css';
 
@@ -17,11 +17,15 @@ function renderLink(
     if (index + 1 == links.length) {
       customStyle = { marginRight: 0 };
     }
+    const resolved = useResolvedPath(linkItem.link);
+    const match = useMatch({ path: resolved.pathname, end: true });
+
     return (
       <div className={styles.hamburgerMenuItem} key={`${prefix}-${index}`}>
         <Link
           to={linkItem.link}
           style={customStyle}
+          className={match ? styles.activeLink : styles.link}
           onClick={() => setIsOpen(false)}
         >
           {linkItem.name}

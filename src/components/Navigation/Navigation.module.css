@@ -1,7 +1,7 @@
 @value sizes: "../../sizes.css";
 @value full-width, spacer, border-radius-size, font-size-bigger, font-size-big from sizes;
 @value colors: "../../colors.css";
-@value background, outline, primary, on-primary-container, surface from colors;
+@value background, outline, primary, on-primary-container, surface, secondary-container from colors;
 
 .navigation {
   height: 6.4rem;
@@ -22,12 +22,21 @@
   }
 }
 
-.navigation a {
+.link {
   color: on-primary-container;
   margin-right: spacer;
 }
 
-.navigation a:hover {
+.link:hover {
+  color: primary;
+}
+
+.activeLink {
+  color: primary;
+  margin-right: spacer;
+}
+
+.activeLink:hover {
   color: primary;
 }
 
@@ -37,6 +46,11 @@
   display: inline-block;
   outline: none;
   font-weight: bold;
+  color: on-primary-container;
+}
+
+.logo:hover {
+  color: primary;
 }
 
 .links {
