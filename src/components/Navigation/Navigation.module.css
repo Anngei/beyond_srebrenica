@@ -1,7 +1,7 @@
 @value sizes: "../../sizes.css";
-@value full-width, spacer from sizes;
+@value full-width, spacer, border-radius-size, font-size-bigger, font-size-big from sizes;
 @value colors: "../../colors.css";
-@value background, outline, primary, on-primary-container from colors;
+@value background, outline, primary, on-primary-container, surface from colors;
 
 .navigation {
   height: 6.4rem;
@@ -42,4 +42,68 @@
 .links {
   padding: 1.8rem 0;
   outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.closeMenu {
+  color: outline;
+  cursor: pointer;
+  width: 3.2rem;
+  text-align: center;
+  font-size: font-size-big;
+}
+
+.hamburgerMenuIcon {
+  display: none;
+}
+
+.hamburgerMenuItem {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburgerMenuIcon {
+    display: block;
+    cursor: pointer;
+    width: 4.2rem;
+    height: 4rem;
+    margin-top: 1.1rem;
+    padding-top: 0.5rem;
+    border: 1px solid outline;
+    border-radius: 0.5rem;
+    background-color: surface;
+    color: primary;
+    font-size: font-size-bigger;
+  }
+
+  .hamburgerMenu {
+    display: block;
+    z-index: 1001;
+    position: fixed;
+    width: 70vw;
+    height: 100vh;
+    right: -75vw;
+    background-color: surface;
+    border-left: 1px solid outline;
+    transition: right 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+  }
+
+  .openedHamburgerMenu {
+    right: 0;
+  }
+
+  .hamburgerMenuItem {
+    width: 100%;
+    padding: spacer;
+    height: 3rem;
+  }
 }
