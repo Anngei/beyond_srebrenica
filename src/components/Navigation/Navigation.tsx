@@ -92,6 +92,10 @@ export function Navigation(_props: any): JSX.Element {
       name: 'Hintergrund',
       link: '/background',
     },
+    {
+      name: 'Über uns',
+      link: '/about-us',
+    },
   ];
   return (
     <nav className={styles.navigation}>
