@@ -14,7 +14,7 @@ export function Poi({ id }: { id: string }): JSX.Element {
     const cacheHit = localStorage.getItem(id);
     if (cacheHit) {
       setPoiState(JSON.parse(cacheHit));
-      logger.debug(`Cache hit for ${id}`)
+      logger.debug(`Cache hit for ${id}`);
     } else {
       getPoi(id)
         .then((poi) => {
