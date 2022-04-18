@@ -1,16 +1,26 @@
 import { LatLngExpression } from 'leaflet';
-import { getPoiCoordinate, getPoiShortInfo } from './client';
+import { getPoiData, getCoordinates } from './client';
 
-export interface PointOfInterest {
-  coordinate: LatLngExpression;
-  shortInfo: string;
+export interface Address {
+  street: string;
+  zip: string;
+  city: string;
 }
 
-export function getPoi(id: string): Promise<PointOfInterest> {
-  return Promise.all([getPoiCoordinate(id), getPoiShortInfo(id)]).then(
-    ([coordinate, shortInfo]) => ({
-      coordinate: coordinate as LatLngExpression,
-      shortInfo,
-    })
-  );
+export interface PointOfInterest {
+  name: string;
+  coordinate: LatLngExpression;
+  address: Address;
+  linkedReportage: string[];
+}
+
+export async function getPoi(id: string): Promise<PointOfInterest> {
+  const poi = await getPoiData(id);
+  const coordinate = await getCoordinates(poi.address);
+  return {
+    name: poi.name,
+    coordinate: [coordinate.lat, coordinate.lon],
+    address: poi.address,
+    linkedReportage: poi.linkedReportage,
+  };
 }

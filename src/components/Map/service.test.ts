@@ -1,20 +1,34 @@
 import { LatLngExpression } from 'leaflet';
 import { getPoi, PointOfInterest } from './service';
-import { getPoiCoordinate, getPoiShortInfo } from './client';
+import { getPoiData, getCoordinates, PoiDTO, CoordinateDTO } from './client';
 
 jest.mock('./client');
-const getPoiCoordinateMock = getPoiCoordinate as jest.Mock<Promise<number[]>>;
-const getPoiShortInfoMock = getPoiShortInfo as jest.Mock<Promise<string>>;
+const getPoiDataMock = getPoiData as jest.Mock<Promise<PoiDTO>>;
+const getCoordinatesMock = getCoordinates as jest.Mock<Promise<CoordinateDTO>>;
 
 describe('poi service', () => {
   it('should return poi', () => {
-    getPoiCoordinateMock.mockResolvedValue([42.1337, 1337.42]);
-    getPoiShortInfoMock.mockResolvedValue('foo bar');
+    getPoiDataMock.mockResolvedValue({
+      name: 'foobar',
+      address: {
+        street: 'street 2',
+        city: 'foobar city',
+        zip: 'zip',
+      },
+      linkedReportage: ['foo', 'bar'],
+    });
+    getCoordinatesMock.mockResolvedValue({ lat: 42.1337, lon: 1337.42 });
 
     const actual = getPoi('foo');
     const expected: PointOfInterest = {
       coordinate: [42.1337, 1337.42] as LatLngExpression,
-      shortInfo: 'foo bar',
+      name: 'foobar',
+      address: {
+        street: 'street 2',
+        city: 'foobar city',
+        zip: 'zip',
+      },
+      linkedReportage: ['foo', 'bar'],
     };
 
     return expect(actual).resolves.toStrictEqual(expected);

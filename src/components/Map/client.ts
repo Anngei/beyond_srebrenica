@@ -1,46 +1,51 @@
-import { Converter } from 'showdown';
-
 const BASE_URL =
   'https://raw.githubusercontent.com/Anngei/beyond_srebrenica/main/content/poi/';
-const CONVERTER = new Converter();
-
-function toCoordinate(rawData: string): number[] {
-  const coordinateString = rawData.split(',');
-  if (coordinateString.length !== 2) {
-    throw Error('Coordinates are invalid');
-  }
-  return [parseFloat(coordinateString[0]), parseFloat(coordinateString[1])];
+const NOMINATIM_URL =
+  'https://nominatim.openstreetmap.org/search.php?format=json';
+export interface AddressDTO {
+  street: string;
+  zip: string;
+  city: string;
+}
+export interface PoiDTO {
+  name: string;
+  address: AddressDTO;
+  linkedReportage: string[];
+}
+export interface CoordinateDTO {
+  lon: number;
+  lat: number;
 }
 
-export function getPoiCoordinate(resource: string): Promise<number[]> {
-  return fetch(`${BASE_URL}${resource}/coordinate.txt`)
+export function getPoiData(resource: string): Promise<PoiDTO> {
+  return fetch(`${BASE_URL}${resource}/data.json`).then((response) => {
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
+    return response.json();
+  });
+}
+
+export function getCoordinates(address: AddressDTO): Promise<CoordinateDTO> {
+  return fetch(
+    `${NOMINATIM_URL}&street=${address.street}&city=${address.city}&postalcode=${address.zip}&country=Germany`
+  )
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.statusText);
       }
-      return response.text();
+      return response.json();
     })
-    .then(toCoordinate);
-}
-
-export function getPoiShortInfo(resource: string): Promise<string> {
-  return fetch(`${BASE_URL}${resource}/short-info.md`)
     .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.statusText);
+      if (response.length < 1) {
+        throw new Error(
+          `Was not able to find address for ${JSON.stringify(address)}`
+        );
       }
-      return response.text();
-    })
-    .then((data) => CONVERTER.makeHtml(data));
-}
-
-export function getPoiDescription(resource: string): Promise<string> {
-  return fetch(`${BASE_URL}${resource}/description.md`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.statusText);
-      }
-      return response.text();
-    })
-    .then((data) => CONVERTER.makeHtml(data));
+      const firstResult = response[0];
+      return {
+        lon: firstResult.lon,
+        lat: firstResult.lat,
+      };
+    });
 }
