@@ -1,8 +1,7 @@
 import React from 'react';
-import { Map } from '../components/Map/Map';
-import { Content } from '../components/Content/Content';
-import { Button } from '../components/Button/Button';
 import { Link } from 'react-router-dom';
+import { MapCard } from '../components/Card/MapCard';
+import { ReportageCard } from '../components/Card/ReportageCard';
 import styles from './home.module.css';
 
 export function Home(_props: any): JSX.Element {
@@ -17,28 +16,15 @@ export function Home(_props: any): JSX.Element {
         voluptua. At vero eos et accusam et
       </section>
 
-      <section>
-        <Map
-          poi={[
-            'ikb-berlin',
-            'suedost-ev',
-            'rosenduft',
-            'slawistik-institut',
-            'balkanbeats',
-          ]}
-          style={{ borderRadius: '1.2rem 1.2rem 0 0', height: '35rem' }}
-        />
-        <div className={styles.cardHeadline}>
-          Orte bosniakischen Lebens in Berlin
-        </div>
-        <div className={styles.cardText}>
-          In Berlin gibt es einige Orte, an denen das bosniakische Leben
-          stattfindet. Wir haben einige davon aufgesucht und stellen diese vor.
-        </div>
-        <div className={styles.cardAction}>
-          <Button to="/poi">Entdecke mehr</Button>
-        </div>
-      </section>
+      <MapCard
+        poi={[
+          'ikb-berlin',
+          'suedost-ev',
+          'rosenduft',
+          'slawistik-institut',
+          'balkanbeats',
+        ]}
+      />
 
       <section className={styles.reports}>
         <div className={styles.reportsTitle}>
@@ -46,34 +32,8 @@ export function Home(_props: any): JSX.Element {
             Reportagen <Link to="/reportage">weiterlesen</Link>
           </h3>
         </div>
-        <div className={styles.contentCard}>
-          <div
-            className={styles.cardHeadline}
-            style={{ borderRadius: '1.2rem' }}
-          >
-            <Content contentKey={`/reportagen/krdzic/name`} />
-          </div>
-          <div className={styles.cardText}>
-            <Content contentKey={`/reportagen/krdzic/intro`} />
-          </div>
-          <div className={styles.cardAction}>
-            <Button to="reportage/krdzic">weiterlesen</Button>
-          </div>
-        </div>
-        <div className={styles.contentCard}>
-          <div
-            className={styles.cardHeadline}
-            style={{ borderRadius: '1.2rem' }}
-          >
-            <Content contentKey={`/reportagen/haye/name`} />
-          </div>
-          <div className={styles.cardText}>
-            <Content contentKey={`/reportagen/haye/intro`} />
-          </div>
-          <div className={styles.cardAction}>
-            <Button to="reportage/haye">weiterlesen</Button>
-          </div>
-        </div>
+        <ReportageCard reportage="krdzic" />
+        <ReportageCard reportage="haye" />
       </section>
     </>
   );

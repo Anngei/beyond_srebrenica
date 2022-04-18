@@ -1,0 +1,51 @@
+@value sizes: "../../sizes.css";
+@value spacer, font-size-bigger, font-size-small, border-radius-size, gap from sizes;
+@value colors: "../../colors.css";
+@value surface from colors;
+
+.cardHeadline {
+  font-size: font-size-bigger;
+  font-weight: 500;
+  background-color: surface;
+  padding: 1.6rem 1.6rem gap;
+}
+
+.cardSubhead {
+  background-color: surface;
+  padding: 0 1.6rem 1.6rem;
+}
+
+.cardText {
+  background-color: surface;
+  font-size: font-size-small;
+  padding: 0 1.6rem gap;
+}
+
+.cardAction {
+  background-color: surface;
+  padding: 0.8rem 1.6rem spacer;
+  border-radius: 0 0 border-radius-size border-radius-size;
+  text-align: right;
+}
+
+.contentCard {
+  width: calc(50% - gap);
+}
+
+.contentCard .cardText {
+  height: 10.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentCard {
+    width: 100%;
+  }
+
+  .contentCard .cardText {
+    height: auto;
+  }
+}
+
+.contentCard p {
+  margin: 0;
+}
