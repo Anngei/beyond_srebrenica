@@ -1,4 +1,3 @@
-[&#5176; Zurück](/map)
 ## Garten Rosenduft
 
 Möckernstraße 43-44

@@ -1,4 +1,3 @@
-[&#5176; Zurück](/map)
 # Balkanbeats im Lido Berlin
 
 Curvystraße 7
