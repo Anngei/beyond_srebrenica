@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapCard } from '../components/Card/MapCard';
 import { ReportageCard } from '../components/Card/ReportageCard';
-import styles from './home.module.css';
+import styles from './Home.module.css';
 
 export function Home(_props: any): JSX.Element {
   return (
