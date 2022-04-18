@@ -11,7 +11,19 @@ function formatShortInfo(poi: PointOfInterest): string {
 export function Poi({ id }: { id: string }): JSX.Element {
   const [poiState, setPoiState] = useState<PointOfInterest | null>(null);
   useEffect(() => {
-    getPoi(id).then(setPoiState).catch(logger.error);
+    const cacheHit = localStorage.getItem(id);
+    if (cacheHit) {
+      setPoiState(JSON.parse(cacheHit));
+      logger.debug(`Cache hit for ${id}`)
+    } else {
+      getPoi(id)
+        .then((poi) => {
+          localStorage.setItem(id, JSON.stringify(poi));
+          return poi;
+        })
+        .then(setPoiState)
+        .catch(logger.error);
+    }
   }, [id]);
 
   if (poiState === null) {
