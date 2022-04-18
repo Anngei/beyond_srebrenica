@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1010px) {
   .wrapper {
     padding: 0 spacer;
   }
@@ -91,7 +91,7 @@
     position: fixed;
     width: 70vw;
     height: 100vh;
-    right: -75vw;
+    right: -100vw;
     background-color: surface;
     border-left: 1px solid outline;
     transition: right 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
