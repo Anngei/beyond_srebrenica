@@ -17,7 +17,7 @@ export function ReportageCard({
         <Content contentKey={`/reportagen/${reportage}/intro`} />
       </div>
       <div className={styles.cardAction}>
-        <Button to={`reportage/${reportage}`}>weiterlesen</Button>
+        <Button to={`/reportage/${reportage}`}>weiterlesen</Button>
       </div>
     </div>
   );
