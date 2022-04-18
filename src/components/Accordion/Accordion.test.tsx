@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { Accordion, initialToggleState } from './Accordion';
 import { Content } from '../Content/Content';
 
@@ -23,7 +24,11 @@ describe('Accordion component', () => {
 
   it('should hide content by default', () => {
     ContentMock.mockReturnValue(<>foo</>);
-    render(<Accordion elements={{ foo: 'foobar' }} />);
+    render(
+      <MemoryRouter>
+        <Accordion elements={{ foo: 'foobar' }} />
+      </MemoryRouter>
+    );
     const title = screen.getByText('foobar');
     const content = screen.queryByTestId('content');
 
@@ -33,7 +38,11 @@ describe('Accordion component', () => {
 
   it('should show content when title was clicked', () => {
     ContentMock.mockReturnValue(<>foo</>);
-    render(<Accordion elements={{ foo: 'foobar' }} />);
+    render(
+      <MemoryRouter>
+        <Accordion elements={{ foo: 'foobar' }} />
+      </MemoryRouter>
+    );
     const title = screen.getByText('foobar');
 
     fireEvent.click(title);

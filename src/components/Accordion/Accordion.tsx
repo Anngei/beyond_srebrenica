@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Content } from '../Content/Content';
 import styles from './Accordion.module.css';
 import 'remixicon/fonts/remixicon.css';
@@ -84,9 +85,18 @@ export function Accordion({
 }: {
   elements: Record<string, string>;
 }): JSX.Element {
-  const [contentState, setContentState] = useState<Record<string, boolean>>(
-    initialToggleState(elements)
-  );
+  const initialState = initialToggleState(elements);
+  const [contentState, setContentState] = useState<Record<string, boolean>>({
+    ...initialState,
+  });
+  const { hash } = useLocation();
+  useEffect(() => {
+    const itemKey = hash.replace('#', '');
+    const state = initialToggleState(elements);
+    if (hash && state[itemKey] != undefined) {
+      setContentState({ ...state, [itemKey]: true });
+    }
+  }, [hash, elements]);
 
   return (
     <section className={styles.accordion}>
