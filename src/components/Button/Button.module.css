@@ -43,7 +43,8 @@
 }
 
 .tonal:hover {
-  background-color: secondary;
+  color: on-secondary-container;
+  filter: brightness(110%);
 }
 
 .button:focus {
