@@ -5,7 +5,7 @@ import { ReportageCard } from '../components/Card/ReportageCard';
 import styles from './Reportage.module.css';
 
 function renderReportage(reportage: string): JSX.Element {
-  return <ReportageCard reportage={reportage} />;
+  return <ReportageCard key={reportage} reportage={reportage} />;
 }
 
 export function ReportagePage(_props: any): JSX.Element {
