@@ -1,7 +1,7 @@
 @value sizes: "../../sizes.css";
 @value full-width, spacer, border-radius-size, font-size-bigger, font-size-big from sizes;
 @value colors: "../../colors.css";
-@value background, outline, primary, on-primary-container, surface, secondary-container from colors;
+@value background, outline, primary,on-primary, on-primary-container, surface, secondary-container, on-secondary-container from colors;
 
 .navigation {
   height: 6.4rem;
@@ -20,24 +20,6 @@
   .wrapper {
     padding: 0 spacer;
   }
-}
-
-.link {
-  color: on-primary-container;
-  margin-right: spacer;
-}
-
-.link:hover {
-  color: primary;
-}
-
-.activeLink {
-  color: primary;
-  margin-right: spacer;
-}
-
-.activeLink:hover {
-  color: primary;
 }
 
 .logo {
@@ -64,24 +46,32 @@
   }
 }
 
+.link {
+  display: inline-block;
+  color: on-primary-container;
+  margin-right: spacer;
+}
+
+.link:hover {
+  color: primary;
+}
+
+.activeLink {
+  display: inline-block;
+  color: primary;
+  margin-right: spacer;
+}
+
+.activeLink:hover {
+  color: primary;
+}
+
 .hamburgerMenu {
   display: none;
 }
 
-.closeMenu {
-  color: outline;
-  cursor: pointer;
-  width: 3.2rem;
-  text-align: center;
-  font-size: font-size-big;
-}
-
 .hamburgerMenuIcon {
   display: none;
-}
-
-.hamburgerMenuItem {
-  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -89,14 +79,15 @@
     display: block;
     cursor: pointer;
     width: 4.2rem;
-    height: 4rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
     margin-top: 1.1rem;
-    padding-top: 0.5rem;
     border: 1px solid outline;
     border-radius: 0.5rem;
     background-color: surface;
     color: primary;
     font-size: font-size-bigger;
+    text-align: center;
   }
 
   .hamburgerMenu {
@@ -109,15 +100,42 @@
     background-color: surface;
     border-left: 1px solid outline;
     transition: right 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+    padding: 0 spacer 0.8rem;
+  }
+
+  .closeMenu {
+    color: outline;
+    cursor: pointer;
+    font-size: font-size-big;
+    height: 4.2rem;
+    line-height: 4.2rem;
   }
 
   .openedHamburgerMenu {
     right: 0;
   }
 
-  .hamburgerMenuItem {
+  .link {
     width: 100%;
-    padding: spacer;
-    height: 3rem;
+    padding: 0 spacer;
+    height: 4.2rem;
+    line-height: 4.2rem;
+  }
+
+  .link:hover {
+    border-radius: border-radius-size;
+    background-color: secondary-container;
+    color: on-secondary-container;
+  }
+
+  .activeLink,
+  .activeLink:hover {
+    width: 100%;
+    padding: 0 spacer;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    background-color: primary;
+    border-radius: border-radius-size;
+    color: on-primary;
   }
 }

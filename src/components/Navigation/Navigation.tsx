@@ -21,16 +21,15 @@ function renderLink(
     const match = useMatch({ path: resolved.pathname, end: true });
 
     return (
-      <div className={styles.hamburgerMenuItem} key={`${prefix}-${index}`}>
-        <Link
-          to={linkItem.link}
-          style={customStyle}
-          className={match ? styles.activeLink : styles.link}
-          onClick={() => setIsOpen(false)}
-        >
-          {linkItem.name}
-        </Link>
-      </div>
+      <Link
+        to={linkItem.link}
+        key={`${prefix}-${index}`}
+        style={customStyle}
+        className={match ? styles.activeLink : styles.link}
+        onClick={() => setIsOpen(false)}
+      >
+        {linkItem.name}
+      </Link>
     );
   };
 }
@@ -47,7 +46,11 @@ function renderBurgerMenu(
   return (
     <section className={className}>
       <div className={styles.closeMenu}>
-        <i className="ri-close-line" onClick={() => setIsOpen(!isOpen)} />
+        <i
+          className="ri-close-line"
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ position: 'relative', left: '-0.5rem' }}
+        />
       </div>
       {links.map(renderLink(setIsOpen, 'burger-menu'))}
     </section>
@@ -66,7 +69,10 @@ function renderBurgerMenuIcon(
       className={styles.hamburgerMenuIcon}
       onClick={() => setIsOpen(!isOpen)}
     >
-      <i className="ri-menu-line" />
+      <i
+        className="ri-menu-line"
+        style={{ position: 'relative', top: '-0.2rem' }}
+      />
     </button>
   );
 }
