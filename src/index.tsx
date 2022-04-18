@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { App } from './components/App';
-import { MaxWidthWrapper } from './components/MaxWidthWrapper/MaxWidthWrapper';
 import { AboutUs } from './pages/AboutUs';
 import { Poi } from './pages/Poi';
 import { Background } from './pages/Background';
@@ -15,10 +14,10 @@ const NoMatchPage: (_props: any) => JSX.Element = (_props: any) => {
   const location = useLocation();
 
   return (
-    <MaxWidthWrapper>
+    <>
       <h1>😓 404 - Seite nicht gefunden</h1>
       Leider wurde diese Seite ({location.pathname}) nicht gefunden.
-    </MaxWidthWrapper>
+    </>
   );
 };
 

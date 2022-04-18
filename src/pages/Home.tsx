@@ -1,14 +1,13 @@
 import React from 'react';
 import { Map } from '../components/Map/Map';
-import { MaxWidthWrapper } from '../components/MaxWidthWrapper/MaxWidthWrapper';
-import styles from './home.module.css';
 import { Content } from '../components/Content/Content';
 import { Button } from '../components/Button/Button';
 import { Link } from 'react-router-dom';
+import styles from './home.module.css';
 
 export function Home(_props: any): JSX.Element {
   return (
-    <MaxWidthWrapper>
+    <>
       <section className={styles.intro}>
         <p className={styles.introTitle}>
           Kleines intro, Lorem ipsum dolor sit amet
@@ -76,6 +75,6 @@ export function Home(_props: any): JSX.Element {
           </div>
         </div>
       </section>
-    </MaxWidthWrapper>
+    </>
   );
 }

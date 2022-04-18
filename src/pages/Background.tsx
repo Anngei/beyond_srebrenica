@@ -1,10 +1,9 @@
 import React from 'react';
-import { MaxWidthWrapper } from '../components/MaxWidthWrapper/MaxWidthWrapper';
 import { Accordion } from '../components/Accordion/Accordion';
 
 export function Background(_props: any): JSX.Element {
   return (
-    <MaxWidthWrapper>
+    <>
       <h1>Hintergrund</h1>
       <Accordion
         elements={{
@@ -16,6 +15,6 @@ export function Background(_props: any): JSX.Element {
           gedenken: 'Wichtige Gedenktage',
         }}
       />
-    </MaxWidthWrapper>
+    </>
   );
 }
