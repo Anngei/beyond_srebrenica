@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Button } from '../components/Button/Button';
+import { Map } from '../components/Map/Map';
 import { getPoi, PointOfInterest } from '../components/Map/service';
 import { ReportageCard } from '../components/Card/ReportageCard';
 import { logger } from '../logger';
@@ -41,7 +42,7 @@ export function Poi(_props: any): JSX.Element {
     }
   }, [poiId]);
 
-  if (!poiState) {
+  if (!poiState || !poiId) {
     return <></>;
   }
 
@@ -51,6 +52,13 @@ export function Poi(_props: any): JSX.Element {
         zurück
       </Button>
       <h1>{poiState.name}</h1>
+      <Map
+        pois={[poiId]}
+        center={poiState.coordinate}
+        zoom={16}
+        style={{ height: '30rem' }}
+      />
+      <h3>Adresse</h3>
       {poiState.address.street}
       <br />
       {`${poiState.address.zip} ${poiState.address.city}`}

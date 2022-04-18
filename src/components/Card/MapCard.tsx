@@ -7,7 +7,7 @@ export function MapCard({ poi }: { poi: string[] }): JSX.Element {
   return (
     <section>
       <Map
-        poi={poi}
+        pois={poi}
         style={{ borderRadius: '1.2rem 1.2rem 0 0', height: '35rem' }}
       />
       <div className={styles.cardHeadline}>
