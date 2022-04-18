@@ -1,0 +1,9 @@
+{
+  "name": "Institut für Slawistik und Hungarologie",
+  "address": {
+    "street": "Unter den Linden 6",
+    "zip": "10099",
+    "city": "Berlin"
+  },
+  "linkedReportage": ["music", "haye", "halilovic"]
+}
