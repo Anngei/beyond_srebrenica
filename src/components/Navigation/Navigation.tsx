@@ -84,10 +84,10 @@ export function Navigation(_props: any): JSX.Element {
       name: 'Reportagen',
       link: '/reportage',
     },
-    {
-      name: 'Orte',
-      link: '/poi',
-    },
+    // {
+    //   name: 'Orte',
+    //   link: '/poi',
+    // },
     {
       name: 'Hintergrund',
       link: '/background',
